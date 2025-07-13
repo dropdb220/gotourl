@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Go to URL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #input {
+            resize: none;
+            width: 50%;
+            margin-left: 10%;
+        }
+    </style>
+    <script type="text/javascript">
+        document.getElementById('go').addEventListener('click', () => {
+            document.location.href = document.getElementById('input').value;
+            window.location.href = document.getElementById('input').value;
+        });
+    </script>
+</head>
+<body>
+    <h1>Go to URL</h1>
+    <textarea placeholder="URL" id="input" rows="8"></textarea>
+    <button id="go">Go</button>
+</body>
+</html>
